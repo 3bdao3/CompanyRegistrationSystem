@@ -45,7 +45,6 @@ namespace CompanyRegistrationSystem.API.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            // هنا نرجع اللينك كامل مش نسبي
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
             var fullPath = $"{baseUrl}/logos/{filename}";
 

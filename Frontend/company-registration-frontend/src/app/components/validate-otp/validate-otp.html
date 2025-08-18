@@ -1,0 +1,14 @@
+<div class="otp-container">
+    <form [formGroup]="otpForm" (ngSubmit)="onSubmit()" class="otp-form">
+        <h2>Validate OTP</h2>
+
+        <div class="form-group">
+            <label>Enter OTP</label>
+            <input type="text" formControlName="otp" placeholder="Enter OTP">
+        </div>
+
+        <button type="submit" [disabled]="otpForm.invalid">Validate OTP</button>
+    </form>
+
+    <p *ngIf="message" class="otp-message">{{ message }}</p>
+</div>

@@ -1,0 +1,74 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 20px
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364) // ألوان داكنة راقية
+  position: relative
+  overflow: hidden
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2)
+
+  &::before, &::after
+    content: ""
+    position: absolute
+    width: 300px
+    height: 300px
+    border-radius: 50%
+    opacity: 0.2
+    transform: rotate(45deg)
+
+  &::before
+    top: -100px
+    left: -100px
+    background: radial-gradient(circle, #ff7e5f, #feb47b) // برتقالي ذهبي فاتح
+
+  &::after
+    bottom: -100px
+    right: -100px
+    background: radial-gradient(circle, #43cea2, #185a9d) // أخضر أزرق فاخر
+
+  .logo
+    height: 50px
+    order: 1
+
+  .logout-btn
+    padding: 8px 16px
+    background-color: #ff4d4f
+    color: white
+    border: none
+    border-radius: 6px
+    cursor: pointer
+    font-weight: 600
+    order: 2
+    transition: all 0.3s
+
+    &:hover
+      background-color: #ff6b6b
+      transform: translateY(-2px)
+
+.content
+  display: flex
+  justify-content: center
+  align-items: center
+  height: calc(100vh - 70px)
+  background: linear-gradient(135deg, #ece9e6, #ffffff) // خلفية هادئة وراقية
+  position: relative
+  overflow: hidden
+
+  &::before
+    content: ""
+    position: absolute
+    width: 500px
+    height: 500px
+    border-radius: 50%
+    background: radial-gradient(circle, #7de2fc, #b9b6e5) // أزرق فاتح بنفسجي
+    top: -150px
+    left: -150px
+    opacity: 0.2
+    transform: rotate(30deg)
+
+  h1
+    font-size: 38px
+    color: #1b1b2f // داكن أنيق
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.15)
+    z-index: 1

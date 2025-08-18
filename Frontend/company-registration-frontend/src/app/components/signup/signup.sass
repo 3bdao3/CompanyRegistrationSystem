@@ -1,0 +1,100 @@
+.signup-page
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  min-height: 100vh
+  padding-left: 60px
+  background: linear-gradient(120deg, #84fab0, #8fd3f4)
+
+.signup-container
+  width: 50vw                  // نصف عرض الصفحة
+  max-width: 700px             // لتجنب أن يكون كبير جدًا على الشاشات الصغيرة
+  padding: 60px
+  background: rgba(255, 255, 255, 0.95)
+  border-radius: 20px
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25)
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.signup-form
+  width: 100%
+  display: flex
+  flex-direction: column
+
+  h2
+    text-align: center
+    margin-bottom: 35px
+    color: #333
+    font-size: 32px
+    letter-spacing: 1.2px
+
+  .form-group
+    display: flex
+    flex-direction: column
+    margin-bottom: 20px
+    width: 100%
+
+    label
+      margin-bottom: 8px
+      font-weight: 600
+      color: #555
+      font-size: 18px
+
+    input
+      padding: 18px
+      border: 1px solid #a0d1ff
+      border-radius: 16px
+      font-size: 16px
+      transition: all 0.3s ease
+      background: #e6f2ff
+      color: #333
+
+      &::placeholder
+        color: #7aaed9
+
+      &:focus
+        border-color: #007bff
+        box-shadow: 0 0 20px rgba(0,123,255,0.4)
+        outline: none
+
+.preview-container
+  text-align: center
+  margin-bottom: 25px
+
+  img
+    max-width: 200px
+    max-height: 200px
+    border-radius: 16px
+    transition: transform 0.5s ease, box-shadow 0.5s ease
+    cursor: pointer
+
+    &:hover
+      transform: scale(1.3) rotate(360deg)
+      box-shadow: 0 15px 35px rgba(0,123,255,0.4)
+
+button
+  padding: 20px
+  border: none
+  border-radius: 16px
+  background: linear-gradient(90deg, #36d1dc, #5b86e5)
+  color: white
+  font-size: 20px
+  font-weight: 600
+  cursor: pointer
+  transition: all 0.3s ease
+
+  &:hover
+    background: linear-gradient(90deg, #5b86e5, #36d1dc)
+    transform: translateY(-2px)
+
+  &:disabled
+    background-color: #aaa
+    cursor: not-allowed
+
+.signup-message
+  text-align: center
+  margin-top: 20px
+  color: #ff5722
+  font-weight: bold
+  font-size: 18px

@@ -1,0 +1,9 @@
+<div class="header">
+    <img *ngIf="companyData?.LogoPath" [src]="companyData.LogoPath" alt="Company Logo" class="logo">
+
+    <button class="logout-btn" (click)="logout()">Logout</button>
+</div>
+
+<div class="content" *ngIf="companyData">
+    <h1>Hello {{ companyData.EnglishName }}</h1>
+</div>
